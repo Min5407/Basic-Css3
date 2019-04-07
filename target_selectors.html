@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Targeted Selectors</title>
+   <style>
+      /* direct child */
+      /* > means direct child meaning only wants to change the background of paragraph in div not the one in the list item*/
+      div >p{
+         background: #ddd;
+      }
+
+      /* directly after  */
+      /* + meaning right after div */
+      div + p{
+         background: #333;
+         color: white;
+      }
+
+      /* by atrribute */
+      /* meaning anything a tag with target change its style */
+      a[target='_blank']{
+         background: red;
+         color: white;
+      }
+
+      /* specific attribute values */
+      input[type="text"],
+      input[type="email"]{
+         width: 100%;
+         margin-bottom: 5px;
+      }
+
+   </style>
+</head>
+<body>
+   <div>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <ul>
+         <li>Item1</li>
+         <li> <p>Item2</p></li>
+         <li>Item3</li>
+      </ul>
+      <p>Lorem ipsum dolor sit amet.</p>
+   </div>
+   <p>Lorem ipsum dolor sit amet.</p>
+   <!-- target blank meaning new tab -->
+   <a href="#">Page 1</a>
+   <a href="#" target="_self">Page 2</a>
+   <a href="http://google.com" target="_blank">Google</a>
+
+   <br><br>
+   <form>
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="email">
+      <input type="submit" value="Submit">
+   </form>
+</body>
+</html>

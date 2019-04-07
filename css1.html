@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+   <link rel="stylesheet" href="style/style1.css">
+   <title>CSS</title>
+   <style>
+      /* element selector */
+      body{
+         background-color: #333;
+         /* http://fonts.google.com/ for google fonts */
+         font-family: 'Roboto', sans-serif;
+         font-size: 18px;
+         line-height: 1.6em;
+      }
+
+      /* Internal Css */
+      h1{
+         color:red;
+      }
+      /* .is for class and #is for ID */
+      .primary-heading{
+         color:pink
+      }
+      #welcome{
+         background-color: #f4f4f4;
+      }
+      /* multiple selectors */
+      #welcome,#about,.primary-heading{
+         border: 1px solid #ccc;
+         padding: 10px;
+         margin-bottom: 5px;
+         
+      }
+      /* Nested selectors */
+      #welcome p{
+         font-size: 20px;
+
+      } 
+      #about{
+         color:rgb(0,255,0);
+         /* hex: color:{#000000;}= black
+            hex: color:{#ffffff;}= white
+            reference:www.color-hex.com   
+          */
+      }
+      #welcome p span{
+         font-weight: bold;
+      }
+      #about p span{
+         font-style: italic;
+      }
+   </style>
+</head>
+<body>
+   <h1 >Heading One</h1>
+   <h2>Heading two</h2>
+   <div id="welcome">
+      <h3 class="primary-heading">Welcome</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<span> Culpa itaque fugiat repellat ab, enim at error </span>maiores iusto dolores dolorum.</p>
+   </div>
+   <div id="about">
+      <h3>About</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span>Ut architecto distinctio quidem ipsum </span>commodi natus ullam, voluptas esse nesciunt aliquid.</p>
+   </div>
+      
+</body>
+</html>

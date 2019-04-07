@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>box model & margin & padding</title>
+   <style>
+      /*Css reset */
+      *{
+         margin:0;
+         padding:0;
+         /* if padding is 120px the width of the box is 500px, the width increase 500px+120px to just add padding inside the same width use box sizing */
+         box-sizing: border-box;
+      }
+
+
+      .box{
+         background:red;
+         border:2px #777 solid;
+         width:500px;
+
+         /* padding on all sides */ 
+         /* padding is inside the border*/
+         padding:20px;
+
+         /* padding per sides*/
+         padding-top:10px;
+         padding-right: 20px;
+         padding-bottom: 10px;
+         padding-left: 20px;
+         /* padding shortcut= top,right,bottom,left */
+         padding:10px 20px 10px 20px;
+
+         /* adding shortcut= top&bottom , left&right */
+         padding:10px 20px;
+
+         /* margin on all sides */
+         /* margin shorcuts are same as padding
+          top right bottom left */
+         /* margin is outside the border */
+         margin:20px;
+         
+         margin:10px 20px;
+      }
+
+      .box h3{
+         padding-bottom: 10px;
+      }
+      
+      
+   </style>
+</head>
+<body>
+   <div class="box">
+      <h3>Box one</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse atque incidunt eveniet iure. Atque, perspiciatis possimus corporis doloribus exercitationem, cupiditate enim quos sapiente facere ratione et facilis dolorum ab ipsum?</p>
+   </div>
+   <br>
+   <div class="box">
+      <h3>Box two</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse atque incidunt eveniet iure. Atque, perspiciatis possimus corporis doloribus exercitationem, cupiditate enim quos sapiente facere ratione et facilis dolorum ab ipsum?</p>
+   </div>
+   
+</body>
+</html>

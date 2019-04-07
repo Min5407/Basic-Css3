@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Positioning</title>
+   <style>
+      body{
+        height: 4000px;
+      }
+
+      /* relative postion is the parents and absolute is the  relative to its parents*/
+      .box{
+         width:100px;
+         height: 100px;
+      }
+      .container{
+         position: relative;
+         width:500px;
+         height:500px;
+         background:#333;
+      }
+      #box1{
+        position: relative;
+        /* z-index-> higher the z-index the closer to the viewer so which means z-index will help the red box to move infront of the black container(box).  */
+        z-index: 1;
+         top: 30px;
+         left:30px;
+         
+         background: red;
+      }
+      #box2{
+        position: absolute;
+         top:100px;
+         left:100px;
+         background: yellow;
+      }
+      #box3{
+         position: absolute;
+         bottom:100px;
+         right:-60px;
+         background: blue;  
+      }
+      #box4{
+         position: fixed;
+         z-index: -1;
+         background: green;
+      }
+      #box5{
+         position: sticky;
+         top:0px;
+         
+         background: orange;
+      }
+      #box6{
+         
+
+         background: red;
+      }
+      #box7{
+         background: purple;
+      }
+      #box8{
+         background: pink;
+      }
+      
+   </style>
+</head>
+<body>
+   <div id="box1" class="box"></div>
+   <div class="container">
+      <div id="box2" class="box"></div>
+      <div id="box3" class="box"></div>
+   </div>
+   <div id="box4" class="box"></div>
+   <div id="box5" class="box"></div>
+   <div id="box6" class="box"></div>
+   <div id="box7" class="box"></div>
+   <div id="box8" class="box"></div>
+</body>
+</html>

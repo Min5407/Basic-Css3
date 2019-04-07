@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, in itial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>keyframe animation</title>
+   <style>
+      body{
+         background: #333;
+      }
+
+      .box{
+         background: white;
+         width: 200px;
+         height: 200px;
+         position: relative;
+
+         animation-name:animate1;
+         animation-duration:2s;
+         animation-iteration-count: 1;
+         /* fill mode makes it stay where its at */
+         animation-fill-mode:forwards;
+         /* waits for 2seconds to animate */
+         animation-delay: 1s;
+         animation-direction: alternate;
+
+         /* starts slow and end fast */
+         /* ease-in-out => starts slow and ends slow  */
+         animation-timing-function:ease-in;
+
+         /* animation:name|duration|iteration-count |fill-mode|delay|timing-function */
+         animation: animate1 2s 1 forwards 1s ease-in;
+         
+      }
+
+      .box:hover{
+         color: red;
+      }
+      /* creating animation function */
+
+      @keyframes animate2{
+         from{
+            /* from doesnt actually needed becuase the width is already 200px; */
+            width: 200px;
+            top: 0;
+            left:0;
+         }
+         to{
+            width:600px;
+            background-color: blue;
+            top: 100px;
+            left: 100px;
+         }
+      }
+      @keyframes animate1{
+         from{
+            /* from doesnt actually needed becuase the width is already 200px; */
+            width: 200px;
+            top: 0;
+            left:0;
+         }
+         to{
+            width:600px;
+            background-color: blue;
+            top: 100px;
+            
+         }
+      }
+   </style>
+</head>
+<body>
+   <div class="box">box</div>
+   
+</body>
+</html>

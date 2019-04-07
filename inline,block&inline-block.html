@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Inline and block styling</title>
+   <style>
+      
+      li{
+         display: inline;
+         
+      }
+
+      li a{
+         padding-right: 30px;
+      }
+      img{
+         display: block;
+         margin:auto;
+         border: 1px red
+      }
+
+      .box{
+         box-sizing: border-box;
+         width:32.8%;
+         /* inline-block allows to add width since inline only innores width,etc */
+         display: inline-block;
+         background: #f4f4f4;
+         padding:20px;
+         margin-bottom: 15px;
+         
+      }
+   </style>
+</head>
+<body>
+   <ul>
+      <li><a href="#"> Technology</a></li>
+      <li><a href="#"> business</a></li>
+      <li><a href="#"> Fashion</a></li>
+   </ul>
+
+   <img src="./image/leaf.png" alt="My image">
+   <br><br>
+   <div class="box">
+      <h3>heading1</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati debitis laudantium. Quis, omnis. Consectetur sed consequuntur quas eligendi a?</p>
+   </div>
+   <div class="box">
+      <h3>heading2</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati debitis laudantium. Quis, omnis. Consectetur sed consequuntur quas eligendi a?</p>
+   </div>
+   <div class="box">
+      <h3>heading3</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati debitis laudantium. Quis, omnis. Consectetur sed consequuntur quas eligendi a?</p>
+   </div>
+</body>
+</html>
